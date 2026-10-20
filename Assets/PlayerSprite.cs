@@ -8,7 +8,7 @@ public class PlayerSprite : MonoBehaviour
     private float xMove;
 
     [Header("Inscribed")]
-    public float moveSpeed = 5f; // Movement speed of player
+    public float moveSpeed = 6f; // Movement speed of player
     public float edge = 8.2f; // Map boundaries
 
     public GameObject projPrefab;
@@ -17,7 +17,7 @@ public class PlayerSprite : MonoBehaviour
     [Header("Shooting Settings")]
     public float fireRate = 0.5f; // Fire rate of player
     private float fireTime = 0f; // Used to create delay between attacks
-    public float projSpeed = 9f; // Speed of projectiles
+    public float projSpeed = 7f; // Speed of projectiles
 
     void Start() {
         rb = GetComponent<Rigidbody2D>(); // Get 2D Rigidbody first
