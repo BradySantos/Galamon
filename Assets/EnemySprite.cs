@@ -5,13 +5,17 @@ using UnityEngine;
 public class EnemySprite : MonoBehaviour
 {
     private Rigidbody2D rb;
+    //For movement
+    private float speed;
+    private float xStart;
+    private float offset;
 
     public GameObject projPrefab;
     public Transform projSpawnLoc;
 
-    [Header("Inscribed")]
-    public float moveSpeed = 3f;
-    public float changeDirTime = 2f;
+    [Header("Movement Settings")]
+    public float minSpeed = 1f;
+    public float maxSpeed = 1f;
     public float moveRange = 2f;
 
     [Header("Shooting Settings")]
@@ -19,18 +23,28 @@ public class EnemySprite : MonoBehaviour
     public float maxAttackDelay = 7f;
     public float projSpeed = 7f;
     
-    // Allow enemies to start shooting as game starts
+    // Allow enemies to move and start shooting as game starts
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
 
+        // Movement
+        speed = Random.Range(minSpeed, maxSpeed); // Calculate random speed
+        xStart = transform.position.x; // Starting position
+        offset = Random.Range(0f, 10f); // Calculate random distance
+
+        // Attack
         StartCoroutine(randomAttack());
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        // !!!!!! Add Enemy patterns
+
+
+        // Movement
+        float x = xStart + Mathf.Sin((Time.time + offset) * speed) * moveRange; // Calculate movement path
+        transform.position = new Vector3(x, transform.position.y, transform.position.z);
     }
 
     IEnumerator randomAttack() {
