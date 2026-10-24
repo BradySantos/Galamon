@@ -24,6 +24,17 @@ public class EnemySprite : MonoBehaviour
     public float maxAttackDelay = 7f;
     public float projSpeed = 7f;
 
+    [Header("Enemy stats")]
+    public float health = 3f; // TODO: Make sure these are different depending on what spawns
+    public float dmg = 1f;
+
+    // [Header("Audio")] // TODO: Add audio
+    // public AudioSource audioSource;
+
+    // public AudioClip ...;
+    // public AudioClip ...;
+    // public AudioClip ...;
+
     public enum MovePattern { // Save different types of movement patterns
         Horizontal,
         Vertical,
@@ -53,7 +64,7 @@ public class EnemySprite : MonoBehaviour
         offset = Random.Range(0f, 10f); // Calculate random distance
 
         // Attack
-        StartCoroutine(randomAttack());
+        StartCoroutine(RandomAttack());
     }
 
     void Update()
@@ -83,7 +94,12 @@ public class EnemySprite : MonoBehaviour
         transform.position = new Vector3(x, y, transform.position.z);
     }
 
-    IEnumerator randomAttack() {
+    // TODO: Update stats
+    void UpdateStats() {
+
+    }
+
+    IEnumerator RandomAttack() {
         while (true) {
             float delay = Random.Range(minAttackDelay, maxAttackDelay);
             yield return new WaitForSeconds(delay);
@@ -101,4 +117,5 @@ public class EnemySprite : MonoBehaviour
             Destroy(attack, 1.5f); // Delete attack object after certain time
         }
     }
+
 }

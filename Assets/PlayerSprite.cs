@@ -7,17 +7,28 @@ public class PlayerSprite : MonoBehaviour
     private Rigidbody2D rb;
     private float xMove;
 
+    public GameObject projPrefab;
+    public Transform projSpawnLoc; // Used to make sure projectile spawns from ship
+
     [Header("Inscribed")]
     public float moveSpeed = 6f; // Movement speed of player
     public float edge = 8.2f; // Map boundaries
-
-    public GameObject projPrefab;
-    public Transform projSpawnLoc; // Used to make sure projectile spawns from ship
 
     [Header("Shooting Settings")]
     public float fireRate = 0.5f; // Fire rate of player
     private float fireTime = 0f; // Used to create delay between attacks
     public float projSpeed = 7f; // Speed of projectiles
+
+    [Header("Player Stats")]
+    public float health = 5f;
+    public float dmg = 1f;
+
+    // [Header("Audio")] // TODO: Add audio
+    // public AudioSource audioSource;
+
+    // public AudioClip ...;
+    // public AudioClip ...;
+    // public AudioClip ...;
 
     void Start() {
         rb = GetComponent<Rigidbody2D>(); // Get 2D Rigidbody first
@@ -30,15 +41,15 @@ public class PlayerSprite : MonoBehaviour
         // Space bar/Click for attacks
         if (Time.time >= fireTime) { // Make sure attacks are delayed
             if (Input.GetKeyDown(KeyCode.Space)) { // Spacebar attack
-                spacebarAttack(); 
+                SpacebarAttack(); 
             }
             else if (Input.GetMouseButtonDown(0)) { // Left click attack
-                clickAttack();
+                ClickAttack();
             }
         }
     }
 
-    void FixedUpdate() {
+    void FixedUpdate() { // Movement Boundaries
         rb.linearVelocity =  new Vector2(xMove * moveSpeed, rb.linearVelocity.y); // Make movement smooth
         
         // Set boundaries at edges
@@ -53,7 +64,12 @@ public class PlayerSprite : MonoBehaviour
         }
     }
 
-    void playerSpawnProj() {
+    // TODO: Update stats
+    void UpdateStats() {
+
+    }
+
+    void PlayerSpawnProj() {
         // Spawn projectiles
         fireTime = Time.time + fireRate; // Calculate attack delay
         GameObject attack = Instantiate(projPrefab, projSpawnLoc.position, Quaternion.identity);
@@ -68,19 +84,16 @@ public class PlayerSprite : MonoBehaviour
         Destroy(attack, 1.5f); // Delete attack object after certain time
     }
 
-    void spacebarAttack() {
+    void SpacebarAttack() {
         // Space bar projectiles
-        playerSpawnProj();
-        
+        PlayerSpawnProj();
     }
 
-    void clickAttack() {
+    void ClickAttack() {
         // Click projectiles
-        fireTime = Time.time + fireRate; // Calculate attack delay
-        playerSpawnProj();
+        PlayerSpawnProj();
     }
-
-
+    
 }
 
 

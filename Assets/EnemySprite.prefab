@@ -171,7 +171,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 1
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.75, y: 0.75}
   m_EdgeRadius: 0
 --- !u!50 &-8450036065890555162
 Rigidbody2D:
@@ -214,6 +214,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   projPrefab: {fileID: 6311080239880346101, guid: f8635378e47b22c4e9597785dc975407, type: 3}
   projSpawnLoc: {fileID: 4899498261634345402}
+  minSpeed: 1
+  maxSpeed: 1
+  moveRange: 2
   minAttackDelay: 3
   maxAttackDelay: 7
   projSpeed: 7
+  health: 3
+  dmg: 1
+  movePattern: 0

@@ -108,12 +108,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ae12c6a91d3187499cba58b5b7c17ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  moveSpeed: 6
-  edge: 8.2
   projPrefab: {fileID: 6311080239880346101, guid: f8635378e47b22c4e9597785dc975407, type: 3}
   projSpawnLoc: {fileID: 4688227914549595244}
+  moveSpeed: 6
+  edge: 8.2
   fireRate: 0.5
   projSpeed: 7
+  health: 5
+  dmg: 1
 --- !u!61 &-2187210733332317647
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -158,7 +160,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 1
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.75, y: 0.75}
   m_EdgeRadius: 0
 --- !u!50 &894625620962779175
 Rigidbody2D:
