@@ -64,15 +64,22 @@ public class PlayerSprite : MonoBehaviour
         }
     }
 
-    // TODO: Update stats
-    void UpdateStats() {
+    // Player takes damage
+    public void TakeDamage(float damage) {
+        health -= damage;
 
+        if (health <= 0) { // Death
+            Destroy(gameObject);
+        }
+        // TODO: Game over screen
     }
 
     void PlayerSpawnProj() {
         // Spawn projectiles
         fireTime = Time.time + fireRate; // Calculate attack delay
+        
         GameObject attack = Instantiate(projPrefab, projSpawnLoc.position, Quaternion.identity);
+        attack.GetComponent<PlayerProjectile>().dmg = dmg; // Give projectile dmg value of player
         attack.layer = LayerMask.NameToLayer("PlayerProj"); // Ensure projectile is linked to player
         
         // Move projectiles up

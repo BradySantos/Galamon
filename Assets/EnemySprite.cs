@@ -94,9 +94,14 @@ public class EnemySprite : MonoBehaviour
         transform.position = new Vector3(x, y, transform.position.z);
     }
 
-    // TODO: Update stats
-    void UpdateStats() {
+    // Enemy takes damage
+    public void TakeDamage(float damage) {
+        health -= damage;
 
+        if (health <= 0) { // Death
+            Destroy(gameObject);
+        }
+        // TODO: Update screen to next level when all are destroyed
     }
 
     IEnumerator RandomAttack() {
@@ -105,7 +110,7 @@ public class EnemySprite : MonoBehaviour
             yield return new WaitForSeconds(delay);
 
             GameObject attack = Instantiate(projPrefab, projSpawnLoc.position, Quaternion.identity);
-
+            attack.GetComponent<EnemyProjectile>().dmg = dmg; // Give projectile dmg value of enemy
             attack.layer = LayerMask.NameToLayer("EnemyProj");
 
             // Move projectiles down
