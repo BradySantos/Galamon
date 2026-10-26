@@ -34,8 +34,7 @@ public class PlayerSprite : MonoBehaviour
         rb = GetComponent<Rigidbody2D>(); // Get 2D Rigidbody first
     }
 
-    // Movement input using A and D or Left and Right Arrows
-    void Update() {
+    void Update() { // Movement input using A and D or Left and Right Arrows
         xMove = Input.GetAxisRaw("Horizontal"); // Take in A, D, <-, -> inputs
 
         // Space bar/Click for attacks
@@ -63,9 +62,8 @@ public class PlayerSprite : MonoBehaviour
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
         }
     }
-
-    // Player takes damage
-    public void TakeDamage(float damage) {
+    
+    public void TakeDamage(float damage) { // Player takes damage
         health -= damage;
 
         if (health <= 0) { // Death
@@ -91,13 +89,11 @@ public class PlayerSprite : MonoBehaviour
         Destroy(attack, 1.5f); // Delete attack object after certain time
     }
 
-    void SpacebarAttack() {
-        // Space bar projectiles
+    void SpacebarAttack() { // Space bar projectiles
         PlayerSpawnProj();
     }
 
-    void ClickAttack() {
-        // Click projectiles
+    void ClickAttack() { // Click projectiles
         PlayerSpawnProj();
     }
     

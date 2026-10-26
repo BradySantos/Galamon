@@ -45,8 +45,7 @@ public class EnemySprite : MonoBehaviour
     private static MovePattern groupPattern; // Used to make all enemies share move pattern
     private static bool patternChosen = false;
     
-    // Allow enemies to move and start shooting as game starts
-    void Start()
+    void Start() // Allow enemies to move and start shooting as game starts
     {
         rb = GetComponent<Rigidbody2D>();
 
@@ -94,8 +93,7 @@ public class EnemySprite : MonoBehaviour
         transform.position = new Vector3(x, y, transform.position.z);
     }
 
-    // Enemy takes damage
-    public void TakeDamage(float damage) {
+    public void TakeDamage(float damage) { // Enemy takes damage
         health -= damage;
 
         if (health <= 0) { // Death
