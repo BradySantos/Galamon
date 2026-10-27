@@ -95,9 +95,11 @@ public class EnemySprite : MonoBehaviour
 
     public void TakeDamage(float damage) { // Enemy takes damage
         health -= damage;
+        health = Mathf.Max(health, 0); // Make sure health does not go below 0
 
         if (health <= 0) { // Death
             Destroy(gameObject);
+            ScoreManager.instance.AddScore(100); // Add points when enemy is defeated
         }
         // TODO: Update screen to next level when all are destroyed
     }
