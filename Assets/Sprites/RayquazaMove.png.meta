@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: c24b0d2e399098240ac0120c9aaad6d9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7826185129236975414
+    second: RayquazaMove_0
+  - first:
+      213: 7159300123296663758
+    second: RayquazaMove_1
+  - first:
+      213: 7704605945999467169
+    second: RayquazaMove_2
+  - first:
+      213: -2954340768659714566
+    second: RayquazaMove_3
+  - first:
+      213: 3742945015394386163
+    second: RayquazaMove_4
+  - first:
+      213: 5967883364699264907
+    second: RayquazaMove_5
+  - first:
+      213: -3848120630102539171
+    second: RayquazaMove_6
+  - first:
+      213: -2504708747787149827
+    second: RayquazaMove_7
+  - first:
+      213: -7323585829415293056
+    second: RayquazaMove_8
+  - first:
+      213: 5446676146334685223
+    second: RayquazaMove_9
+  - first:
+      213: 4191225371826444472
+    second: RayquazaMove_10
+  - first:
+      213: -2697770122529733873
+    second: RayquazaMove_11
+  - first:
+      213: -7038200466720980108
+    second: RayquazaMove_12
+  - first:
+      213: -80205776651920781
+    second: RayquazaMove_13
+  - first:
+      213: -7324657671307268110
+    second: RayquazaMove_14
+  - first:
+      213: 1391904147021833961
+    second: RayquazaMove_15
+  - first:
+      213: -6517155985197780589
+    second: RayquazaMove_16
+  - first:
+      213: 2129411068971925579
+    second: RayquazaMove_17
+  - first:
+      213: -2757693210321300025
+    second: RayquazaMove_18
+  - first:
+      213: -506668138578266413
+    second: RayquazaMove_19
+  - first:
+      213: 9004416319451654215
+    second: RayquazaMove_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RayquazaMove_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 642
+        width: 95
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63f4d9ef8e13c9c60800000000000000
+      internalID: 7826185129236975414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 642
+        width: 95
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec80281d781fa5360800000000000000
+      internalID: 7159300123296663758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_2
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 642
+        width: 90
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a229a189424cea60800000000000000
+      internalID: 7704605945999467169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 536
+        width: 71
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd459249b21007d0800000000000000
+      internalID: -2954340768659714566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_4
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 536
+        width: 69
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0c66819ac91f330800000000000000
+      internalID: 3742945015394386163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_5
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 536
+        width: 69
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b87dcdd0d4e22d250800000000000000
+      internalID: 5967883364699264907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 425
+        width: 79
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d54c2e5dcaab89ac0800000000000000
+      internalID: -3848120630102539171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_7
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 425
+        width: 79
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd55561aac7d3dd0800000000000000
+      internalID: -2504708747787149827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_8
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 425
+        width: 79
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08fed9b7d756d5a90800000000000000
+      internalID: -7323585829415293056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 315
+        width: 88
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7285fdce81b769b40800000000000000
+      internalID: 5446676146334685223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_10
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 315
+        width: 86
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b8d15505493a2a30800000000000000
+      internalID: 4191225371826444472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_11
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 315
+        width: 84
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0304f0fd589f8ad0800000000000000
+      internalID: -2697770122529733873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 212
+        width: 79
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4738b1b27f9435e90800000000000000
+      internalID: -7038200466720980108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_13
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 212
+        width: 77
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a5ab5654d03eef0800000000000000
+      internalID: -80205776651920781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_14
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 212
+        width: 75
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ffe368d7a6995a90800000000000000
+      internalID: -7324657671307268110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 73
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e621a47279015310800000000000000
+      internalID: 1391904147021833961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_16
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 104
+        width: 74
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391b97c29296e85a0800000000000000
+      internalID: -6517155985197780589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_17
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 104
+        width: 74
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b404bdac5103d8d10800000000000000
+      internalID: 2129411068971925579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 83
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c5da47d2a4bab9d0800000000000000
+      internalID: -2757693210321300025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_19
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 0
+        width: 83
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d6b80d2304f7f8f0800000000000000
+      internalID: -506668138578266413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayquazaMove_20
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 0
+        width: 83
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74865a26fec16fc70800000000000000
+      internalID: 9004416319451654215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      RayquazaMove_0: 7826185129236975414
+      RayquazaMove_1: 7159300123296663758
+      RayquazaMove_10: 4191225371826444472
+      RayquazaMove_11: -2697770122529733873
+      RayquazaMove_12: -7038200466720980108
+      RayquazaMove_13: -80205776651920781
+      RayquazaMove_14: -7324657671307268110
+      RayquazaMove_15: 1391904147021833961
+      RayquazaMove_16: -6517155985197780589
+      RayquazaMove_17: 2129411068971925579
+      RayquazaMove_18: -2757693210321300025
+      RayquazaMove_19: -506668138578266413
+      RayquazaMove_2: 7704605945999467169
+      RayquazaMove_20: 9004416319451654215
+      RayquazaMove_3: -2954340768659714566
+      RayquazaMove_4: 3742945015394386163
+      RayquazaMove_5: 5967883364699264907
+      RayquazaMove_6: -3848120630102539171
+      RayquazaMove_7: -2504708747787149827
+      RayquazaMove_8: -7323585829415293056
+      RayquazaMove_9: 5446676146334685223
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

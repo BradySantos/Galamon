@@ -2,8 +2,13 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - Enemy
+  - Projectile
+  - WeakToElectric
+  - NeutralToElectric
+  - ResistanceToElectric
   layers:
   - Default
   - TransparentFX
@@ -14,10 +19,10 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - PlayerProj
+  - EnemyProj
   - 
   - 
   - 
@@ -41,3 +46,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 570525407
+    locked: 0
+  m_RenderingLayers:
+  - Default
+  m_MigratedRenderPipelines: []
