@@ -970,7 +970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 465958968996478601, guid: 46ccb397c1ea59444bee4ec84aea6529, type: 3}
       propertyPath: fireRate
-      value: 0.3
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 465958968996478601, guid: 46ccb397c1ea59444bee4ec84aea6529, type: 3}
       propertyPath: healthBar
