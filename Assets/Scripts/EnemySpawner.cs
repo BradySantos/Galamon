@@ -22,7 +22,9 @@ public class EnemySpawner : MonoBehaviour
             for (int j = 0; j < cols; j++) { // Columns
                 Vector3 spawnPos = transform.position + new Vector3(j * xSpacing, -i * ySpacing, 0);
 
-                Instantiate(enemyPrefab, spawnPos, Quaternion.identity);
+                int randomIndex = Random.Range(0, enemyPrefabs.Length); // Randomize opponents
+
+                Instantiate(enemyPrefabs[randomIndex], spawnPos, Quaternion.identity);
             }
         }
     }

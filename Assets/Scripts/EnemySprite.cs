@@ -5,14 +5,24 @@ using UnityEngine;
 public class EnemySprite : MonoBehaviour
 {
     private Rigidbody2D rb;
-    // For movement
+
+    // Animation
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+    public Sprite genericAttackSprite;
+
+    // Movement
     private float speed;
     private float xStart;
     private float yStart;
     private float offset;
 
+    // Projectiles
     public GameObject projPrefab;
     public Transform projSpawnLoc;
+
+    // Death
+    private bool isDead = false;
 
     [Header("Movement Settings")]
     public float minSpeed = 1f;
@@ -27,6 +37,10 @@ public class EnemySprite : MonoBehaviour
     [Header("Enemy stats")]
     public float health = 3f; // TODO: Make sure these are different depending on what spawns
     public float dmg = 1f;
+
+    [Header("Boss Settings")]
+    public bool isBoss = false;
+    public float bossScore = 1000;
 
     // [Header("Audio")] // TODO: Add audio
     // public AudioSource audioSource;
@@ -49,6 +63,8 @@ public class EnemySprite : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
+        animator = GetComponent<Animator>(); // Get Animator component
+
         // Movement; choose pattern for all enemy instances if not already chosen
         if (!patternChosen) {
             groupPattern = (MovePattern)Random.Range(0,3); // Select random movement pattern
@@ -68,6 +84,10 @@ public class EnemySprite : MonoBehaviour
 
     void Update()
     {
+        if (isDead) {
+            return;
+        }
+
         // Different movement patterns
         float t = (Time.time + offset) * speed;
         float x = xStart;
@@ -94,14 +114,42 @@ public class EnemySprite : MonoBehaviour
     }
 
     public void TakeDamage(float damage) { // Enemy takes damage
+        if (isDead) { // Prevents double deaths
+            return;
+        }
+        
         health -= damage;
         health = Mathf.Max(health, 0); // Make sure health does not go below 0
 
         if (health <= 0) { // Death
-            Destroy(gameObject);
-            ScoreManager.instance.AddScore(100); // Add points when enemy is defeated
+            if (isBoss) {
+                isDead = true;
+                StopAllCoroutines();
+                if (animator != null) {
+                    animator.SetTrigger("Die");
+                }
+            }
+            else {
+                Destroy(gameObject);
+                ScoreManager.instance.AddScore(100); // Add points when enemy is defeated
+            }            
+            return;
         }
-        // TODO: Update screen to next level when all are destroyed
+
+        if (animator != null) { // Play animation if not fatal hit
+            animator.ResetTrigger("Hurt"); // If hits occur close together
+            animator.SetTrigger("Hurt");
+        }
+    }
+
+    public void FinishDeath() { // Used for boss death
+        ScoreManager.instance.AddScore((int)bossScore);
+
+        if (isBoss) { // Go to victory screen
+            FindAnyObjectByType<GameManager>().Victory();
+        }
+
+        Destroy(gameObject);
     }
 
     IEnumerator RandomAttack() {
@@ -109,17 +157,37 @@ public class EnemySprite : MonoBehaviour
             float delay = Random.Range(minAttackDelay, maxAttackDelay);
             yield return new WaitForSeconds(delay);
 
-            GameObject attack = Instantiate(projPrefab, projSpawnLoc.position, Quaternion.identity);
-            attack.GetComponent<EnemyProjectile>().dmg = dmg; // Give projectile dmg value of enemy
-            attack.layer = LayerMask.NameToLayer("EnemyProj");
-
-            // Move projectiles down
-            Rigidbody2D rb = attack.GetComponent<Rigidbody2D>();
-            if (rb != null) {
-                rb.linearVelocity = Vector2.up * -projSpeed;
+            if ((isBoss) && (animator != null)) {
+                animator.SetTrigger("Attack");
             }
+            
+            // Adjust projectile count depending on enemy
+            int projectileCount = isBoss ? 3 : 1; // 3 Projectiles if boss, 1 if not
 
-            Destroy(attack, 1.5f); // Delete attack object after certain time
+            for (int i = 0; i < projectileCount; i++) {
+                Vector3 spawnPos = projSpawnLoc.position;
+                if (isBoss) { // Space out boss attacks
+                    spawnPos.x += (i - 1) * 1.5f;
+                }
+
+                GameObject attack = Instantiate(projPrefab, spawnPos, Quaternion.identity);
+
+                attack.GetComponent<EnemyProjectile>().dmg = dmg; // Give projectile dmg value of enemy
+                attack.layer = LayerMask.NameToLayer("EnemyProj");
+                attack.GetComponent<SpriteRenderer>().sprite = genericAttackSprite; // Assign sprite to projectile
+                
+                float size = isBoss ? 0.5f : 0.2f; // 0.5f if boss, 0.2f if not
+            
+                attack.transform.localScale = new Vector3(size, size, 1f);
+                
+                // Move projectiles down
+                Rigidbody2D rb = attack.GetComponent<Rigidbody2D>();
+                if (rb != null) {
+                    rb.linearVelocity = Vector2.up * -projSpeed;
+                }
+
+                Destroy(attack, 1.5f); // Delete attack object after certain time
+            }
         }
     }
 

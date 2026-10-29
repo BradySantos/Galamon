@@ -44,8 +44,9 @@ GameObject:
   - component: {fileID: 6581046624453833592}
   - component: {fileID: -8450036065890555162}
   - component: {fileID: -2181338121891479015}
+  - component: {fileID: -6861423717347742994}
   m_Layer: 0
-  m_Name: EnemySprite
+  m_Name: HaunterEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,7 +62,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0.01, y: 2.29, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4899498261634345402}
@@ -116,8 +117,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: -1194013549884237178, guid: 7a6bfb5c7ded5f241a972156d1defedd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -164,8 +165,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.21133333}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.41, y: 0.37}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -212,6 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d896a66e97e02914381b58336ee1a7e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  genericAttackSprite: {fileID: 2679935481076377956, guid: 295dbe0feedc2e1449dcd7ee10eff344, type: 3}
   projPrefab: {fileID: 6311080239880346101, guid: f8635378e47b22c4e9597785dc975407, type: 3}
   projSpawnLoc: {fileID: 4899498261634345402}
   minSpeed: 1
@@ -219,7 +221,31 @@ MonoBehaviour:
   moveRange: 2
   minAttackDelay: 3
   maxAttackDelay: 7
-  projSpeed: 7
-  health: 3
+  projSpeed: 8
+  health: 5
   dmg: 1
+  isBoss: 0
+  bossScore: 1000
   movePattern: 0
+--- !u!95 &-6861423717347742994
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7878500047768511358}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 643f751cb49385c41b7bc828b753aa07, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

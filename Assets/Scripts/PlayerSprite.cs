@@ -34,7 +34,7 @@ public class PlayerSprite : MonoBehaviour
     public float projSpeed = 7f; // Speed of projectiles
 
     [Header("Player Stats")]
-    public float health = 10f;
+    public float health = 15f;
     public float dmg = 1f;
 
     [Header("Audio")] 
@@ -127,8 +127,8 @@ public class PlayerSprite : MonoBehaviour
         GameObject attack = Instantiate(projPrefab, projSpawnLoc.position, Quaternion.identity);
         attack.GetComponent<PlayerProjectile>().dmg = dmg; // Give projectile dmg value of player
         attack.layer = LayerMask.NameToLayer("PlayerProj"); // Ensure projectile is linked to player
-        attack.GetComponent<SpriteRenderer>().sprite = thunderboltSprite; // Assign thunderbolt sprite to attack
-        attack.transform.localScale = new Vector3(1.4f, 1.4f, 1f); // Make projectile bigger
+        attack.GetComponent<SpriteRenderer>().sprite = thunderboltSprite; // Assign sprite to projectile
+        attack.transform.localScale = new Vector3(1.3f, 1.3f, 1f); // Adjust projectile size
 
         // Move projectiles up
         Rigidbody2D rb = attack.GetComponent<Rigidbody2D>();
