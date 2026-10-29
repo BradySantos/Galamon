@@ -67,10 +67,10 @@ public class PlayerSprite : MonoBehaviour
 
         // Space bar/Click for attacks
         if (Time.time >= fireTime) { // Make sure attacks are delayed
-            if (Input.GetKeyDown(KeyCode.Space)) { // Spacebar attack
+            if (Input.GetKey(KeyCode.Space)) { // Spacebar attack
                 SpacebarAttack(); 
             }
-            else if (Input.GetMouseButtonDown(0)) { // Left click attack. Skip if clicking UI button
+            else if (Input.GetMouseButton(0)) { // Left click attack. Skip if clicking UI button
                 if ((EventSystem.current != null) && (EventSystem.current.IsPointerOverGameObject())) {
                     return;
                 }
