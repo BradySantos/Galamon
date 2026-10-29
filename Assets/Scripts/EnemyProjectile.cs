@@ -16,13 +16,6 @@ public class EnemyProjectile : MonoBehaviour
             if (player != null) {
                 player.TakeDamage(dmg);
             }
-            
-            // TODO: Play sound when enemy is damaged
-            // PlaySound(...)
-
-            // Update health
-            // scoreCounter.score += 100;
-            // updateStats();
         }
     }
 }

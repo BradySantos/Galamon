@@ -148,7 +148,6 @@ public class PlayerSprite : MonoBehaviour
         PlayerSpawnProj();
         animator.SetBool("IsWalking", false); // Face enemies when attacking
     }
-
 }
 
 
