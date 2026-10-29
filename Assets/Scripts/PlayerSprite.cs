@@ -37,12 +37,10 @@ public class PlayerSprite : MonoBehaviour
     public float health = 5f;
     public float dmg = 1f;
 
-    // [Header("Audio")] // TODO: Add audio
-    // public AudioSource audioSource;
-
-    // public AudioClip ...;
-    // public AudioClip ...;
-    // public AudioClip ...;
+    [Header("Audio")] 
+    public AudioClip deathSound;
+    public AudioClip getHitSound;
+    public AudioSource getHitAudioSource;
 
     void Start() {
         animator = GetComponent<Animator>(); // Get Animator component
@@ -107,7 +105,15 @@ public class PlayerSprite : MonoBehaviour
         healthBar.localScale = new Vector3(originalScale.x * healthPercent, originalScale.y, 
         originalScale.z);
 
+        if ((health > 0) && (!getHitAudioSource.isPlaying)) { // Only play damage sound if not taking fatal hit; no overlap
+            getHitAudioSource.clip = getHitSound;
+            getHitAudioSource.volume = 0.7f;
+            getHitAudioSource.time = 8.5f;
+            getHitAudioSource.Play();
+        }
+
         if (health <= 0) { // Death and game over screen
+            AudioManager.instance.PlaySound(deathSound, 1f);
             Destroy(gameObject);
             GameManager gameManager = FindAnyObjectByType<GameManager>();
             gameManager.GameOver();

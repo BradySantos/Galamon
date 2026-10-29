@@ -8,7 +8,7 @@ public class EnemySpawner : MonoBehaviour
 
     [Header("Enemy Grid")]
     public int rows = 2;
-    public int cols = 7;
+    public int cols = 5;
     public float xSpacing = 1f;
     public float ySpacing = 1f;
 
@@ -22,11 +22,5 @@ public class EnemySpawner : MonoBehaviour
                 Instantiate(enemyPrefab, spawnPos, Quaternion.identity);
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

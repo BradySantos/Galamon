@@ -5,12 +5,6 @@ using UnityEngine;
 public class EnemyProjectile : MonoBehaviour
 {
     public float dmg; // Takes on enemy damage value when proj instantiated
-    // [Header("Audio")] // TODO: Add audio
-    // public AudioSource audioSource;
-
-    // public AudioClip ...;
-    // public AudioClip ...;
-    // public AudioClip ...;
 
     void OnTriggerEnter2D(Collider2D coll) { // Handle collisions on enemy end
         if ((gameObject.layer == LayerMask.NameToLayer("EnemyProj")) && (coll.CompareTag("Player"))) {
