@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 7460615023093444181}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: -2181338121891479015}
   - component: {fileID: -6861423717347742994}
   m_Layer: 0
-  m_Name: RayquazaEnemy
+  m_Name: ChandelureEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,7 +62,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0.01, y: 2.29, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4899498261634345402}
@@ -117,7 +117,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7826185129236975414, guid: c24b0d2e399098240ac0120c9aaad6d9, type: 3}
+  m_Sprite: {fileID: 3151618044717447179, guid: 2ce6f8d1134df7e4cb0f11411f210ba6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -166,7 +166,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.95, y: 0.97}
+    oldSize: {x: 1.08, y: 0.93}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -213,19 +213,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d896a66e97e02914381b58336ee1a7e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  genericAttackSprite: {fileID: -2765608388937133452, guid: 119dc3138af742b40ae143692d60f857, type: 3}
+  genericAttackSprite: {fileID: 1770622696451250673, guid: b54f7120ddc95ea4ca61efd61e34ecdc, type: 3}
   projPrefab: {fileID: 6311080239880346101, guid: f8635378e47b22c4e9597785dc975407, type: 3}
   projSpawnLoc: {fileID: 4899498261634345402}
   minSpeed: 1
-  maxSpeed: 1
+  maxSpeed: 1.5
   moveRange: 2
-  minAttackDelay: 3
-  maxAttackDelay: 7
-  projSpeed: 10
-  health: 25
-  dmg: 2
-  isBoss: 1
+  minAttackDelay: 2
+  maxAttackDelay: 4
+  projSpeed: 8
+  health: 5
+  dmg: 1
+  isBoss: 0
   bossScore: 1000
+  getHitSound: {fileID: 8300000, guid: 596f1b1a1b133c94481ea279848bb985, type: 3}
+  deathSound: {fileID: 8300000, guid: a6b3c27853b7887498f85f4849a68f0b, type: 3}
   movePattern: 0
 --- !u!95 &-6861423717347742994
 Animator:
@@ -237,7 +239,7 @@ Animator:
   m_GameObject: {fileID: 7878500047768511358}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a9d707c88df709e43b27488f137d021f, type: 2}
+  m_Controller: {fileID: 9100000, guid: eb436faf69ba4f945afd1033fd0704e0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

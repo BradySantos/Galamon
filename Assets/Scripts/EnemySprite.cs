@@ -35,43 +35,44 @@ public class EnemySprite : MonoBehaviour
     public float projSpeed = 7f;
 
     [Header("Enemy stats")]
-    public float health = 3f; // TODO: Make sure these are different depending on what spawns
+    public float health = 3f;
     public float dmg = 1f;
 
     [Header("Boss Settings")]
     public bool isBoss = false;
     public float bossScore = 1000;
 
-    // [Header("Audio")] // TODO: Add audio
-    // public AudioSource audioSource;
-
-    // public AudioClip ...;
-    // public AudioClip ...;
-    // public AudioClip ...;
+    [Header("Audio")]
+    public AudioClip getHitSound;
+    public AudioClip deathSound;
 
     public enum MovePattern { // Save different types of movement patterns
         Horizontal,
-        Vertical,
         Circular
     }
 
     public MovePattern movePattern;
-    private static MovePattern groupPattern; // Used to make all enemies share move pattern
-    private static bool patternChosen = false;
+
+    // Each wave should have their own random pattern
+    private static MovePattern currWavePattern; // Used to make all enemies share move pattern
+    private static bool wavePatternChosen = false;
+
+    public static void NewWavePattern() {
+        currWavePattern = (MovePattern)Random.Range(0, 2);
+        wavePatternChosen = true;
+    }
     
     void Start() // Allow enemies to move and start shooting as game starts
     {
         rb = GetComponent<Rigidbody2D>();
-
         animator = GetComponent<Animator>(); // Get Animator component
 
-        // Movement; choose pattern for all enemy instances if not already chosen
-        if (!patternChosen) {
-            groupPattern = (MovePattern)Random.Range(0,3); // Select random movement pattern
-            patternChosen = true;
+        // Choose move pattern for all enemy wave instances if not already chosen
+        if (!wavePatternChosen) {
+            NewWavePattern();
         }
 
-        movePattern = groupPattern;
+        movePattern = currWavePattern;
 
         speed = Random.Range(minSpeed, maxSpeed); // Calculate random speed
         xStart = transform.position.x; // Starting position
@@ -98,10 +99,6 @@ public class EnemySprite : MonoBehaviour
                 x = xStart + Mathf.Sin(t) * moveRange;
                 break;
 
-            case MovePattern.Vertical:
-                y = yStart + Mathf.Sin(t) * moveRange;
-                break;
-
             case MovePattern.Circular:
                 x = xStart + Mathf.Cos(t) * moveRange;
                 y = yStart + Mathf.Sin(t) * moveRange;
@@ -122,6 +119,7 @@ public class EnemySprite : MonoBehaviour
         health = Mathf.Max(health, 0); // Make sure health does not go below 0
 
         if (health <= 0) { // Death
+        AudioManager.instance.PlaySound(deathSound, 1f); // Audio when enemy dies
             if (isBoss) {
                 isDead = true;
                 StopAllCoroutines();
@@ -130,11 +128,15 @@ public class EnemySprite : MonoBehaviour
                 }
             }
             else {
+                FindAnyObjectByType<GameManager>().RegisterEnemyDestroyed(); // - enemy
+                
                 Destroy(gameObject);
                 ScoreManager.instance.AddScore(100); // Add points when enemy is defeated
             }            
             return;
         }
+
+        AudioManager.instance.PlaySound(getHitSound, 1f); // Audio when enemy takes damage
 
         if (animator != null) { // Play animation if not fatal hit
             animator.ResetTrigger("Hurt"); // If hits occur close together

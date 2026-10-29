@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 7460615023093444181}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -217,15 +217,17 @@ MonoBehaviour:
   projPrefab: {fileID: 6311080239880346101, guid: f8635378e47b22c4e9597785dc975407, type: 3}
   projSpawnLoc: {fileID: 4899498261634345402}
   minSpeed: 1
-  maxSpeed: 1
+  maxSpeed: 1.5
   moveRange: 2
-  minAttackDelay: 3
-  maxAttackDelay: 7
+  minAttackDelay: 2
+  maxAttackDelay: 4
   projSpeed: 8
   health: 6
   dmg: 1
   isBoss: 0
   bossScore: 1000
+  getHitSound: {fileID: 8300000, guid: ffa31a40515ddbe4690e2d3ed650d108, type: 3}
+  deathSound: {fileID: 8300000, guid: a6b3c27853b7887498f85f4849a68f0b, type: 3}
   movePattern: 0
 --- !u!95 &-6861423717347742994
 Animator:
