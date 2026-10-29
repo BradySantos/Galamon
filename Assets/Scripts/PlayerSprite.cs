@@ -34,7 +34,7 @@ public class PlayerSprite : MonoBehaviour
     public float projSpeed = 7f; // Speed of projectiles
 
     [Header("Player Stats")]
-    public float health = 5f;
+    public float health = 10f;
     public float dmg = 1f;
 
     [Header("Audio")] 

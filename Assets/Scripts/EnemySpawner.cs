@@ -12,6 +12,9 @@ public class EnemySpawner : MonoBehaviour
     public float xSpacing = 1f;
     public float ySpacing = 1f;
 
+    [Header("Enemy Types")]
+    public GameObject[] enemyPrefabs;
+
     // Spawn enemies
     void Start()
     {

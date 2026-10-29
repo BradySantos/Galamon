@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 9a0716bce27ac5646bde58c48f66e7f4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8878162872589003491
+    second: Starly_0
+  - first:
+      213: -8050096570030651833
+    second: Starly_1
+  - first:
+      213: 3540773202528769215
+    second: Starly_2
+  - first:
+      213: -7835127759723966358
+    second: Starly_3
+  - first:
+      213: 7310666219606579566
+    second: Starly_4
+  - first:
+      213: 4656064445545824588
+    second: Starly_5
+  - first:
+      213: 1892995261487788348
+    second: Starly_6
+  - first:
+      213: 491593482220091346
+    second: Starly_7
+  - first:
+      213: 7008605569786482636
+    second: Starly_8
+  - first:
+      213: 8929309527687154945
+    second: Starly_9
+  - first:
+      213: 1944135525617749826
+    second: Starly_10
+  - first:
+      213: -5617400050807113441
+    second: Starly_11
+  - first:
+      213: 8190022824602002186
+    second: Starly_12
+  - first:
+      213: -2589593364359665451
+    second: Starly_13
+  - first:
+      213: -1976923146094008115
+    second: Starly_14
+  - first:
+      213: 5457122012626073913
+    second: Starly_15
+  - first:
+      213: -5556222210296078576
+    second: Starly_16
+  - first:
+      213: 7470684679708256574
+    second: Starly_17
+  - first:
+      213: 8125783206032871796
+    second: Starly_18
+  - first:
+      213: -4124453065463537212
+    second: Starly_19
+  - first:
+      213: 5320840481074389467
+    second: Starly_20
+  - first:
+      213: 7325118181949028636
+    second: Starly_21
+  - first:
+      213: 7200101308958759138
+    second: Starly_22
+  - first:
+      213: -4978921543557227666
+    second: Starly_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Starly_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 642
+        width: 73
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eaaab61812953b70800000000000000
+      internalID: 8878162872589003491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 639
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7468bbf12df484090800000000000000
+      internalID: -8050096570030651833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_2
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 635
+        width: 72
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb413f6c77a532130800000000000000
+      internalID: 3540773202528769215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_3
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 539
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a60d9d790d8044390800000000000000
+      internalID: -7835127759723966358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 546
+        width: 66
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6919137134b47560800000000000000
+      internalID: 7310666219606579566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_5
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 553
+        width: 79
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41c510c1f9ad9040800000000000000
+      internalID: 4656064445545824588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 448
+        width: 59
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c313a7a2925454a10800000000000000
+      internalID: 1892995261487788348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_7
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 454
+        width: 59
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d730a1eaad72d600800000000000000
+      internalID: 491593482220091346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_8
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 461
+        width: 75
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf82fde1a1934160800000000000000
+      internalID: 7008605569786482636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_9
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 362
+        width: 59
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10dcd47b4b74beb70800000000000000
+      internalID: 8929309527687154945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_10
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 366
+        width: 59
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24fc9a7c5f4fafa10800000000000000
+      internalID: 1944135525617749826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_11
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 371
+        width: 76
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1971628a6cfa02b0800000000000000
+      internalID: -5617400050807113441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_12
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 273
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a036ebacd5ec8a170800000000000000
+      internalID: 8190022824602002186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_13
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 277
+        width: 58
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d822ac2e8aef0cd0800000000000000
+      internalID: -2589593364359665451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_14
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 287
+        width: 70
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc8a1d07fde8094e0800000000000000
+      internalID: -1976923146094008115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_15
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 187
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 939ba82be879bbb40800000000000000
+      internalID: 5457122012626073913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_16
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 191
+        width: 60
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f9a2e765554e2b0800000000000000
+      internalID: -5556222210296078576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_17
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 204
+        width: 70
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39a6f282243da760800000000000000
+      internalID: 7470684679708256574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_18
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 98
+        width: 59
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4719c6d06c494c070800000000000000
+      internalID: 8125783206032871796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_19
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 92
+        width: 57
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1664c0acff2c6c0800000000000000
+      internalID: -4124453065463537212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_20
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 105
+        width: 66
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd125fcf93c67d940800000000000000
+      internalID: 5320840481074389467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_21
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 3
+        width: 58
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19b3d42d2c08a560800000000000000
+      internalID: 7325118181949028636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_22
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 4
+        width: 55
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e8df432ef5ebe360800000000000000
+      internalID: 7200101308958759138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Starly_23
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 19
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b5bbf4c3157eab0800000000000000
+      internalID: -4978921543557227666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Starly_0: 8878162872589003491
+      Starly_1: -8050096570030651833
+      Starly_10: 1944135525617749826
+      Starly_11: -5617400050807113441
+      Starly_12: 8190022824602002186
+      Starly_13: -2589593364359665451
+      Starly_14: -1976923146094008115
+      Starly_15: 5457122012626073913
+      Starly_16: -5556222210296078576
+      Starly_17: 7470684679708256574
+      Starly_18: 8125783206032871796
+      Starly_19: -4124453065463537212
+      Starly_2: 3540773202528769215
+      Starly_20: 5320840481074389467
+      Starly_21: 7325118181949028636
+      Starly_22: 7200101308958759138
+      Starly_23: -4978921543557227666
+      Starly_3: -7835127759723966358
+      Starly_4: 7310666219606579566
+      Starly_5: 4656064445545824588
+      Starly_6: 1892995261487788348
+      Starly_7: 491593482220091346
+      Starly_8: 7008605569786482636
+      Starly_9: 8929309527687154945
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
