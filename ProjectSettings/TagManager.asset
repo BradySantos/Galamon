@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Projectile
+  - WeakToElectric
+  - NeutralToElectric
+  - ResistanceToElectric
   layers:
   - Default
   - TransparentFX
